@@ -5,6 +5,6 @@ let functionArray = (array) => {
   for (let i = 0; i < array.length; i++) {
     array[i] += x;
   }
-  alert(array);
-}
-functionArray(array);
+  return(array);
+  }
+let new_array=alert(functionArray(array))
