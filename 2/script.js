@@ -7,4 +7,7 @@ let functionArray = (array) => {
   }
   return(array);
   }
-let new_array=alert(functionArray(array))
+alert(`Первоначальный массив=${array}
+Элементы массива были увеличены на ${x}
+Массив стал таким=${functionArray(array)}`);
+
