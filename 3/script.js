@@ -23,5 +23,3 @@ function nameEE(arr) {
 let array2 = [[5, 7, [4, [2], 8, [1, 3], 2], [9, []], 1, 8]];
 
 nameEE(array2.flat(Infinity));
-
-
