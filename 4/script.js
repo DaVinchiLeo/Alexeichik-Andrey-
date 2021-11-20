@@ -8,19 +8,39 @@
 
 function SearchForLetters(params1) {
   let SumOfLetters = 0;
+
   return function (params2) {
-    for (let i of params1.toLowerCase()) {
-      if (params2.includes(i)) {
-        SumOfLetters += 1;
-        console.log(i);
+
+    if (params2.length === 1) {
+      for (let i of params1.toLowerCase()) { //если параметр 2 = одна буква
+        if (params2.includes(i)) {
+          console.log(i)
+          SumOfLetters += 1;
+
+        }
       }
+      alert(`Сумма одной конкретной буквы(${params2}) ${SumOfLetters}`);
+      return SumOfLetters;
+    }
+    else {
+
+      params2 = ["а", "о", "и", "е", "ё", "э", "ы", "у", "ю", "я"];
+      for (let i of params1.toLowerCase()) { //если параметр 2 не одна буква
+        if (params2.includes(i)) {
+          console.log(i)
+          SumOfLetters += 1;
+
+        }
+      }
+      alert(`Сумма всех гласных ${SumOfLetters}`);
+      return SumOfLetters;
     }
 
-    return SumOfLetters;
-  };
+  }
 }
-let mystring = prompt(`Введите строку для поиска и подсчета согласных`);
-let ListLetters = ["и", "е"];
 
-let new_Search = SearchForLetters(mystring);
-alert(`число гласных:${new_Search(ListLetters)}`);
+let mystring = prompt(`Введите строку для поиска и подсчета согласных`);
+let ListLetters = ["а"];
+
+let New_Search = SearchForLetters(mystring);
+New_Search(ListLetters);
