@@ -33,26 +33,42 @@ let arrayAnimals = [animal1, animal2, animal3, animal4, animal5];
 
 class AllAnimals {
   constructor(_name, _weight, _age, _voise) {
-    (this.name = _name), 
-    (this.weight = _weight), 
-    (this.age = _age), 
-    (this.voise = _voise);
+    (this.name = _name), (this.weight = _weight), (this.age = _age), (this.voise = _voise);
   }
   voiseAnimal() {
-    console.log(`животное:${this.name} вес:${this.weight} возраст: ${this.age} ${this.voise}`);
+    console.log(`животное:${this.name} вес:${this.weight} возраст: ${this.age} голос${this.voise}`);
   }
 }
-
+/*
 function AnimalFabric(arrayAnimals) {
+  let newarr = [];
   for (let i = 0; i < arrayAnimals.length; i++) {
-    /* console.log(arrayAnimals[i].name);
-       console.log(arrayAnimals[i].weight);
-       console.log(arrayAnimals[i].age);
-       console.log(arrayAnimals[i].voise);*/
-
     let NewAnimals = new AllAnimals(arrayAnimals[i].name, arrayAnimals[i].weight, arrayAnimals[i].age, arrayAnimals[i].voise);
+    newarr.push(NewAnimals);
+
     NewAnimals.voiseAnimal();
   }
+  console.log(newarr);
+  return newarr;
+}
+AnimalFabric(arrayAnimals);*/
+
+// Доп решение
+
+function AnimalFabric(arrayAnimals) {
+  let newarr = [];
+  for (let i = 0; i < arrayAnimals.length; i++) {
+    
+
+    newarr=[arrayAnimals[i].name, arrayAnimals[i].weight, arrayAnimals[i].age, arrayAnimals[i].voise];
+  
+    console.log(newarr);
+   
+  }
+  
+  let NewAnimals = new AllAnimals(newarr);
+  NewAnimals.voiseAnimal();
 }
 
 AnimalFabric(arrayAnimals);
+
