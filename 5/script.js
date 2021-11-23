@@ -34,3 +34,4 @@ function SumUserSalary(array) {
   return sum;
 }
 SumUserSalary(array);
+//reduse или for each 

@@ -39,7 +39,9 @@ class AllAnimals {
     console.log(`животное:${this.name} вес:${this.weight} возраст: ${this.age} голос${this.voise}`);
   }
 }
-/*
+
+//вариант 1
+
 function AnimalFabric(arrayAnimals) {
   let newarr = [];
   for (let i = 0; i < arrayAnimals.length; i++) {
@@ -51,24 +53,28 @@ function AnimalFabric(arrayAnimals) {
   console.log(newarr);
   return newarr;
 }
-AnimalFabric(arrayAnimals);*/
+AnimalFabric(arrayAnimals);
 
-// Доп решение
-
+// Доп решение (не верно)
+/*
 function AnimalFabric(arrayAnimals) {
   let newarr = [];
   for (let i = 0; i < arrayAnimals.length; i++) {
-    
-
-    newarr=[arrayAnimals[i].name, arrayAnimals[i].weight, arrayAnimals[i].age, arrayAnimals[i].voise];
+    newarr.push(arrayAnimals[i]);
+      //console.log(newarr);
+      //newarr=Array.of(arrayAnimals);
+     }
   
-    console.log(newarr);
-   
-  }
-  
-  let NewAnimals = new AllAnimals(newarr);
+  let NewAnimals = new AllAnimals(newarr.flat(Infinity));
   NewAnimals.voiseAnimal();
+  //return newarr; map
 }
 
 AnimalFabric(arrayAnimals);
 
+*/
+//решение по уроку  доделать
+/*
+const AnimalFabric = (arrayAnimals) => arrayAnimals.map((item) => new AllAnimals(item));
+
+AnimalFabric(arrayAnimals);*/
