@@ -55,7 +55,7 @@ function AnimalFabric(arrayAnimals) {
 }
 AnimalFabric(arrayAnimals);
 
-// Доп решение (не верно)
+// Доп решение (не верно)--------------------------------------------------------------------------------------------
 /*
 function AnimalFabric(arrayAnimals) {
   let newarr = [];
@@ -73,8 +73,19 @@ function AnimalFabric(arrayAnimals) {
 AnimalFabric(arrayAnimals);
 
 */
-//решение по уроку  доделать
+//решение по уроку  доделать----------------------------------------------------------------------------------------
 /*
-const AnimalFabric = (arrayAnimals) => arrayAnimals.map((item) => new AllAnimals(item));
+const AnimalFabric2 = (arrayAnimals) => arrayAnimals.map((item) => new AllAnimals(item));
 
-AnimalFabric(arrayAnimals);*/
+AnimalFabric2(arrayAnimals);
+*/
+
+function AnimalFabricMAP(arrayAnimals) {
+  let newarr = [];
+  newarr = arrayAnimals.map((item) => {
+    new AllAnimals(item);
+    
+  });
+ 
+}
+AnimalFabricMAP(arrayAnimals);
