@@ -11,8 +11,9 @@ String.prototype.SearchForLetters=function() {
           SumOfLetters += 1;
         }
       };
-      alert(`Сумма всех гласных ${SumOfLetters}`);
+      alert(`В строке( ${this} ) сумма всех гласных =${SumOfLetters} `);
       return SumOfLetters;
     };
-    "привет как дела(5)".SearchForLetters();
+    "привет как дела".SearchForLetters();
+    "Якобы много текста".SearchForLetters();
 
