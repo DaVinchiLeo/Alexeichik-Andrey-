@@ -28,7 +28,7 @@ id.onclick = function (event) {
     color_line(event.target);
   }
 };
-
+  
 function color_line(li) {
   let selected = id.querySelectorAll(".color_li2");
   for (let elem of selected) {
