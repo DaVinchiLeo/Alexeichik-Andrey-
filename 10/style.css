@@ -1,9 +1,11 @@
 .color_li{
   color: aqua;
-  background-color:none
+  background-color:none;
+ 
 }
 
 .color_li2 {
   background-color: rgb(187, 255, 0);
+  width: fit-content;
 }
 

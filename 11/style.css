@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class_div{
+    color: azure;
+    background-color: black;
+    border: solid 3px azure;
+    width: 600px;
+    height: 600px;
+}
+.class_input{
+    color: azure;
+    background-color: black;
+    font-family: "Pacifico";
+    font-size: 25px;
+    border: solid 3px rgb(17, 240, 240);
+    width: calc(100% - 10px);
+    height: 50px;
+}
+.class_textarea{
+    color: azure;
+    background-color: black;
+    font-family: "Pacifico";
+    font-size: 25px;
+    border: solid 3px rgb(17, 240, 240);
+    width: calc(100% - 10px);
+    height: 420px;
+    word-wrap:"hard";
+    
+}
