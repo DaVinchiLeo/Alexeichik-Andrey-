@@ -1,0 +1,15 @@
+.div_api{
+    display: flex;
+    align-items: center;
+    width: 750px;
+    flex-wrap: wrap;
+    border: solid 5px black;
+    border-radius: 25px;
+    padding: 25px;
+}
+label{
+    width: 250px;
+}
+input{
+    width: 450px;
+}

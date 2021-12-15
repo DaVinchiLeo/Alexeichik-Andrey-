@@ -10,7 +10,7 @@ body{
     background-color: black;
     border: solid 3px azure;
     width: 600px;
-    height: 600px;
+    
 }
 .class_input{
     color: azure;
@@ -21,6 +21,12 @@ body{
     width: calc(100% - 10px);
     height: 50px;
 }
+.class_lebel{
+    color: azure;
+    background-color: black;
+    font-family: "Pacifico";
+}
+
 .class_textarea{
     color: azure;
     background-color: black;
@@ -28,7 +34,7 @@ body{
     font-size: 25px;
     border: solid 3px rgb(17, 240, 240);
     width: calc(100% - 10px);
-    height: 420px;
+    height: 220px;
     word-wrap:"hard";
     
 }

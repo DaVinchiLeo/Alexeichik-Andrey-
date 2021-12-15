@@ -11,7 +11,11 @@ let arrayform = [
   { type: "text", name: "Name", value: "Stewie" },
   { type: "text", name: "Surname", value: "Griffin" },
   { type: "text", name: "Sicond name", value: "Piter" },
-  { type: "textarea", name: "About", value: "Стюарт Гиллиган «Стьюи» Гриффин (англ. Stewart Gilligan «Stewie» Griffin) — персонаж мультсериала «Гриффины», феноменально одарённый годовалый ребёнок, сын Лоис и Питера Гриффинов." },
+  { type: "textarea", name: "About", value: "Стюарт Гиллиган «Стьюи» Гриффин \n(англ. Stewart Gilligan «Stewie» Griffin) — персонаж \n мультсериала «Гриффины», феноменально одарённый\n годовалый ребёнок, сын Лоис и\n Питера Гриффинов." },
+  
+  { type: "radio", name: "Voise",value:"Yes" },
+  { type: "radio", name: "Voise",value:"No" },
+  { type: "radio", name: "Voise",value:"Maybe" },
 ];
 function creature_form(arrayform) {
   let form = document.createElement("form");
@@ -30,6 +34,15 @@ function creature_form(arrayform) {
 
       form.append(input_textarea);
       input_textarea.className = "class_textarea";
+    }
+    if (arrayform[i].type === "radio") {
+      let other_input = document.createElement("input");
+      other_input.setAttribute('type', 'radio');
+      let lebel=document.createElement("label")
+      lebel.innerText = arrayform[i].value;
+      lebel.className = "class_lebel";
+      form.append(other_input);
+      form.append(lebel);
     }
   }
 }

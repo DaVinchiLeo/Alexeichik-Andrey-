@@ -7,6 +7,7 @@ let arrayLinks = [
   { name: "Goodfon", myhref: "http://goodfon.ru" },
   { name: "YouTybe", myhref: "http://youtube.com" },
 ];
+
 //---------------------------function----------------------------------------------------------
 function creature_footer_and_header(arrayLinks) {
   let header = document.createElement("header");
