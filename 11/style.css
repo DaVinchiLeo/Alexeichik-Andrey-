@@ -35,6 +35,6 @@ body{
     border: solid 3px rgb(17, 240, 240);
     width: calc(100% - 10px);
     height: 220px;
-    word-wrap:"hard";
+    white-space: pre-line;
     
 }

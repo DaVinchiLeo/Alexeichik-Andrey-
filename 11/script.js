@@ -29,7 +29,8 @@ function creature_form(arrayform) {
       input_text.className = "class_input";
     }
     if (arrayform[i].type === "textarea") {
-      let input_textarea = document.createElement("input");
+      let input_textarea = document.createElement("textarea");
+      
       input_textarea.value = arrayform[i].value;
 
       form.append(input_textarea);
